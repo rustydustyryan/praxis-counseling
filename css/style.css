@@ -567,8 +567,24 @@ p {
     margin: 0 3px;
   }
 
+  .hero h1 {
+    font-size: 65px;
+  }
+
   .flex-items {
     flex-direction: column;
+  }
+
+  .flex-items > div > div {
+    margin: 1rem;
+  }
+
+  .icons {
+    padding: 13px;
+  }
+
+  .icons p {
+    margin: 1rem 1rem;
   }
 
   .grid .grid-container {
@@ -649,6 +665,10 @@ p {
 
   #cost-info .container > div {
     margin: 1rem 2rem;
+  }
+
+  #cost-info .container > div p {
+    padding: .5rem 0;
   }
 
   #contact {
