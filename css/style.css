@@ -277,7 +277,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 1rem auto;
@@ -586,7 +586,8 @@ p {
 
   .grid .grid-container {
     grid-template-columns: 1fr;
-    margin: 0;
+    margin: 0 auto;
+    padding: 2rem 0;
   }
 
   .grid h2 {
@@ -595,7 +596,7 @@ p {
   }
 
   .grid p {
-    margin: 0;
+    margin: 0 0 2rem 0;
     padding: 1rem .5rem;
   }
 
@@ -607,14 +608,8 @@ p {
   #consultation {
     grid-template-columns: 1fr;
     max-width: 100%;
-  }
-
-  #consultation > div:nth-child(1) {
-    place-items: center;
-    margin-left: 0;
-    padding: 0 2rem;
-    margin: 0 2rem;
-    border: none;
+    margin: auto;
+    gap: 0;
   }
 
   #consultation h2 {
@@ -622,21 +617,45 @@ p {
   }
 
   #consultation p {
-    margin: 0 2rem;
+    margin: 0 auto;
     padding-bottom: 1.5rem;
+    /* width: 100%; */
+  }
+
+  #consultation > div:nth-child(1) {
+    place-items: center;
+    margin-left: 0;
+    padding: 0 1rem;
+    margin: 0 auto;
+    border: none;
+  }
+
+  #consultation > div > div {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    font-size: 16px;
   }
 
   #background {
     grid-template-columns: 1fr;
     place-items: center;
-    margin: 0 1rem;
-    padding: 0 1rem;
+    margin: 1rem 1rem;
+    padding: 1.5rem 1rem;
     word-wrap: break-word;
   }
 
-  /* #background > div:nth-child(1) {
-    grid-column: 1fr;
-  } */
+  #background .credentials p {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1rem;
+    font-size: 19px;
+  }
+  
+  .specialties {
+    display: none;
+  }
 
   #background .specialties h2 {
     font-size: 40px;
@@ -666,6 +685,7 @@ p {
 
   #cost-info .container > div p {
     padding: .5rem 0;
+    max-width: 100%;
   }
 
   #contact {
