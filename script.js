@@ -9,26 +9,29 @@ document.addEventListener('DOMContentLoaded', function() {
   let palmBgStopPoint = 0;
   const boxes = document.querySelectorAll('.box');
   const supportInfo = document.querySelector('.support-info');
+  const isMobile = window.innerWidth <= 930;
 
-  palmBg.style.top = initialPalmBgPosition + 'px';
-
-  window.addEventListener('scroll', function() {
-      var value = window.scrollY;
-
-      var palmBgPosition = initialPalmBgPosition - (value * 0.1);
+  if (!isMobile) {
+    palmBg.style.top = initialPalmBgPosition + 'px';
+  
+    window.addEventListener('scroll', function () {
+      const value = window.scrollY;
+  
+      const palmBgPosition = initialPalmBgPosition - value * 0.1;
       if (palmBgPosition >= palmBgStopPoint) {
-          palmBg.style.top = palmBgPosition + 'px';
+        palmBg.style.top = palmBgPosition + 'px';
       } else {
-          palmBg.style.top = palmBgStopPoint + 'px';
+        palmBg.style.top = palmBgStopPoint + 'px';
       }
-
-      var therapyFitPosition = value * 0.1;
+  
+      const therapyFitPosition = value * 0.1;
       if (therapyFitPosition <= maxBottomTherapyFit) {
-          therapyFit.style.top = therapyFitPosition + 'px';
+        therapyFit.style.top = therapyFitPosition + 'px';
       } else {
-          therapyFit.style.top = maxBottomTherapyFit + 'px';
+        therapyFit.style.top = maxBottomTherapyFit + 'px';
       }
-  });
+    });
+  }
 
   const options = {
     root: null, // Use the viewport as the root

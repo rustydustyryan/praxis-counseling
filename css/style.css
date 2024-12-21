@@ -742,6 +742,15 @@ p {
   * h2 {
     font-size: 36px !important;
   }
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 25px !important;
+  }
+
   .navbar {
     flex-direction: column;
     height: 80px;
@@ -785,7 +794,7 @@ p {
   }
 
   .grid p {
-    margin: 0 0 2rem 0;
+    margin: 0;
     padding: 1rem .5rem;
   }
 
@@ -799,6 +808,7 @@ p {
     max-width: 100%;
     margin: auto;
     gap: 0;
+    padding: 0 1rem;
   }
 
   #consultation h2 {
@@ -807,8 +817,7 @@ p {
 
   #consultation p {
     margin: 0 auto;
-    padding-bottom: 2rem;
-    /* width: 100%; */
+    padding-bottom: .5rem;
   }
 
   #consultation > div:nth-child(1) {
@@ -819,24 +828,45 @@ p {
     border: none;
   }
 
+  #consultation .phone-number {
+    padding: 0;
+    color: var(--green-color);
+  }
+
   #consultation > div > div {
     max-width: 100%;
     margin: 1rem auto;
-    padding: 1rem 0.5rem;
+    padding: 0;
     font-size: 16px;
+    color: var(--green-color);
   }
 
   #background {
     grid-template-columns: 1fr;
     place-items: center;
-    margin: 1rem 1rem;
+    margin: 0;
     padding: 1.5rem 1rem;
     word-wrap: break-word;
     border-radius: 50px;
   }
 
   #background h2 {
-    padding-top: 1rem;
+    padding-top: 0;
+  }
+
+  #background .credentials-container {
+    margin: 0;
+    border-radius: 50px;
+  }
+
+  #background .credentials {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0;
+    font-size: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 1.5rem 0 0 0;
   }
 
   #background .credentials p {
@@ -846,6 +876,40 @@ p {
     padding: 0;
     font-size: 1rem;
     grid-template-columns: 1fr;
+  }
+
+  #background .credentials .experience {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: 30px;
+  }
+
+  .palm-bg {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+    max-width: 100%;
+    grid-row: 2 / span 1;
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+
+  .palm-bg img {
+    width: 100%;
+    height: 10rem;
+    border-radius: 30px;
+    position: relative;
+    margin: 1rem 0;
+  }
+
+  .palm-bg #therapy-fit {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin-top: -.5rem;
+    border-radius: 30px;
+    position: relative;
   }
   
   .specialties {
@@ -857,16 +921,28 @@ p {
     letter-spacing: .5rem;
   }
 
+  #cost-info::before {
+    display: none;
+  }
+
+  #cost-info::after {
+    display: none;
+  }
+
   #cost-info h2 {
     padding: 2.5rem 0 2rem 0;
   }
 
   #cost-info .container {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 1rem;
   }
 
   #cost-info .container > div {
-    margin: 1rem;
+    margin: 0 1rem;
+    width: 100%;
+    border-radius: 30px;
   }
 
   #cost-info .container > div p {
@@ -874,8 +950,12 @@ p {
     max-width: 100%;
   }
 
+  #cost-info .container .cancellation {
+    margin-bottom: 1rem;
+  }
+
   .utah-condition-container {
-    margin: 1rem;
+    margin: 1rem !important;
     padding: 1rem 0;
     max-width: 100%;
   }
@@ -884,7 +964,43 @@ p {
     padding: 1rem 0 0 0;
   }
 
+  .crisis-support-container {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    border-radius: 50px;
+  }
+
+  .crisis-support-container > div {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .crisis-support-container h2 {
+    margin-left: 0;
+    color: var(--white-color);
+  }
+
+  .crisis-support-container .crisis-support-resources {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .crisis-support-resources > div {
+    width: 100%;
+  }
+
+  .support-info.in-view {
+    padding: 1rem;
+    border-radius: 50px;
+  }
+
   #contact {
     max-width: 100vw;
+    padding: 1rem;
+    padding-bottom: 2rem;
   }
 }
