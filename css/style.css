@@ -47,7 +47,7 @@ p {
 
 /* Header */
 .hero {
-  background: url(../img/pexels-pok-rie-268261.jpg) no-repeat center center/cover;
+  background: url(../img/background.webp) no-repeat center center/cover;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -290,8 +290,6 @@ p {
   grid-column: 1 / span 2;
   color: var(--dark-color);
   padding: 3rem 1rem;
-  /* border-top: var(--dark-color) 1px solid; */
-  /* border-bottom: var(--dark-color) 1px solid; */
   border: 2px solid var(--secondary-color);
   border-radius: 35px;
   margin: 0 4rem;
@@ -326,18 +324,12 @@ p {
   padding: 1rem 1rem;
   margin: 1rem auto;
   border-radius: 10px;
-  /* border: 2px solid var(--secondary-color); */
-  /* border-left: var(--dark-color) 1px solid; */
-  /* border-right: var(--dark-color) 1px solid; */
 }
 
 .email {
   padding: 1rem 1rem;
   margin: 1rem auto;
   border-radius: 10px;
-  /* border: 2px solid var(--secondary-color); */
-  /* border-left: var(--dark-color) 1px solid; */
-  /* border-right: var(--dark-color) 1px solid; */
 }
 
 .email:hover,
@@ -348,9 +340,7 @@ p {
 
 /* Background & Credentials */
 #background .credentials-container {
-  /* background-color: var(--secondary-color); */
   background: linear-gradient(200deg, var(--light-secondary) 0%, var(--secondary-color) 80%);
-  /* background: linear-gradient(55deg, rgba(117,147,130,1) 0%, rgba(78,106,94,1) 100%);  */
   margin: 5rem 3rem 3rem 3rem;
   padding: 2rem 1rem;
   list-style: none;
@@ -434,7 +424,6 @@ p {
   z-index: 6;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: absolute;
-  bottom: 0;
   left: 0;
 }
 
@@ -456,7 +445,7 @@ p {
   left: 0;
   width: 35%;
   height: 100%;
-  background: linear-gradient(280deg, rgba(117,147,130,1) 30%, rgba(63,103,86,0) 70%), url(/img/plant-1.jpg) no-repeat center center/cover;
+  background: linear-gradient(280deg, rgba(117,147,130,1) 30%, rgba(63,103,86,0) 70%), url(/img/plant-1.webp) no-repeat center center/cover;
 }
 
 #cost-info:after {
@@ -466,14 +455,13 @@ p {
   right: 0;
   width: 35%;
   height: 100%;
-  background: linear-gradient(280deg, rgba(117,147,130,0) 30%, rgba(117,147,130,1) 70%), url(/img/plant-2.jpg) no-repeat;
+  background: linear-gradient(280deg, rgba(117,147,130,0) 30%, rgba(117,147,130,1) 70%), url(/img/plant-2.webp) no-repeat;
   background-position: 50% 0%;
   background-size: cover;
   z-index: 0;
 }
 
 #cost-info .container {
-  /* width: 55%; */
   width: 100%;
   margin: auto;
   line-height: 2;
@@ -481,8 +469,6 @@ p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -558,9 +544,7 @@ p {
   border-radius: 50px;
   border-radius: 150px;
   position: relative;
-  /* background: var(--secondary-color); */
   background: var(--light-color);
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
 .utah-condition-container h2 {
@@ -593,10 +577,12 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(280deg, rgba(117,147,130,1) 15%, rgba(63,103,86,0) 50%, rgba(117,147,130,1) 70%), url(/img/crisis.jpg) no-repeat center center/cover;
+  background: linear-gradient(280deg, rgba(117,147,130,1) 15%, rgba(63,103,86,0) 50%, rgba(117,147,130,1) 70%), url(/img/crisis.webp) no-repeat;
   border-radius: 70px;
   transform: scaleX(-1);
   z-index: 0;
+  background-position: 50% 20%;
+  background-size: cover;
 }
 
 .crisis-support-container > div {
@@ -685,57 +671,6 @@ p {
 .footer p {
   font-size: 15px;
 }
-
-/* #para {
-  position: relative;
-  height: 97vh;
-  width: 97vh;
-  background: var(--light-green);
-}
-
-#para .p {
-  position: absolute;
-  top: 35%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  font-size: 600px;
-  font-weight: 500;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color: white;
-  width: 100%;
-  text-align: center;
-}
-
-#para .c {
-  position: absolute;
-  top: 62%;
-  left: 62%;
-  transform: translate(-50%, -50%);
-  font-size: 550px;
-  font-weight: 500;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color: white;
-  width: 100%;
-  text-align: center;
-}
-
-#para .gr {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 250px;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color: #1a1a1a;
-  width: 30px;
-  height: 100%;
-  background-color: var(--light-green);
-  transform: rotate(40deg);
-  display: none;
-} */
 
 /* Mobile */
 @media(max-width: 930px) {
@@ -911,6 +846,7 @@ p {
     margin-top: -.5rem;
     border-radius: 30px;
     position: relative;
+    bottom: 0;
   }
   
   .specialties {
@@ -971,6 +907,10 @@ p {
     padding: 1rem;
     width: calc(100% - 2rem);
     border-radius: 50px;
+  }
+
+  .crisis-support-container:before {
+    background-position: 80% 50%;
   }
 
   .crisis-support-container > div {
