@@ -24,12 +24,12 @@
     <title>Praxis Counseling</title>
 </head>
 <body id="home">
-  <header class="hero">
+  <header class="hero" role="banner" aria-labelledby="praxis-counseling">
     <div class="content">
-      <h1 class="logo">Praxis Counseling</h1>
+      <h1 class="logo" id="praxis-counseling">Praxis Counseling</h1>
       <h2>Virtual therapy based in Salt Lake City, Utah <i class="fa-solid fa-mountain-sun"></i></h2>
 
-    <nav id="navbar" class="navbar top">
+    <nav id="navbar" class="navbar top" role="navigation" aria-label="Main Navigation">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#cost-info">Fees</a></li>
@@ -42,27 +42,27 @@
   </header>
 
 
-  <main>
+  <main role="main">
 
-    <section id="about" class="grid">
+    <section id="about" class="grid" aria-labelledby="about-heading">
       <div class="grid-container">
           <div class="column-1">
-            <h2>Connect With A Therapist Who Cares</h2>
+            <h2 id="about-heading">Connect With A Therapist Who Cares</h2>
             <p>My hope is to help. Whether you are dealing with challenges as an individual, a couple, or a family, we will work together in creating the changes you seek. You may have a specific goal in mind, perhaps even a fairly good idea of how to get there, but maybe not - maybe you're only aware of what you don't want and what's not working. That in and of itself is a perfectly acceptable place to start!
             </p>
             <p>My skills are diverse, but I specialize in treating relationship issues and interpersonal conflict. Prior to counseling I pursued a career in Mediation, which entailed intensive training in communication and conflict resolution. Essential skills, really, when counseling couples through turbulent times or family members with differing worldviews.</p>
           </div>
           <div class="column-2">
-            <img src="img/Ade.webp" alt="Adriane Andersen" loading="lazy">
+            <img src="img/Ade.webp" alt="Adriane Andersen, Licensed Clinical Mental Health Counselor" loading="lazy">
           </div>
       </div>
     </section>
 
 
     <!-- Consultation -->
-      <section id="consultation">
+      <section id="consultation" aria-labelledby="consultation-heading">
           <div>
-            <h2><span class="free">Free</span> 15 Minute Consultation</h2>
+            <h2 id="consultation-heading"><span class="free">Free</span> 15 Minute Consultation</h2>
             <p>It's important to feel a connection with your therapist. My therapy style might not match your needs, so I offer a 15 minute phone conversation to see if we would be a good fit for each other.</p>
           </div>
           <div class="cont">
@@ -76,9 +76,9 @@
       </section>
 
       <!-- Background & Credentials -->
-    <section id="background">
+    <section id="background" aria-labelledby="background-heading">
       <div class="credentials-container">
-        <h2>Credentials & Background</h2>
+        <h2 id="background-heading">Credentials & Background</h2>
         <div class="credentials">
           <div class="experience">
             <p>
@@ -108,8 +108,8 @@
     </section>
 
     <!-- Cost & Info -->
-    <section id="cost-info">
-      <h2>Fees & Info</h2>
+    <section id="cost-info" aria-labelledby="cost-info-heading">
+      <h2 id="cost-info-heading">Fees & Info</h2>
       <div class="container">
         <div class="rates box">
           <h3>– Rates –</h3>
@@ -133,9 +133,9 @@
     </section>
   </main>
   
-  <section id="utah-invisible-condition">
+  <section id="utah-invisible-condition" aria-labelledby="utah-invisible-condition-heading">
     <div class="utah-condition-container">
-      <h2>Utah Invisible Conditions Alert Program <a href="https://le.utah.gov/~2023/bills/static/SB0148.html" target="_blank">S.B 148.</a></h2>
+      <h2 id="utah-invisible-condition-heading">Utah Invisible Conditions Alert Program <a href="https://le.utah.gov/~2023/bills/static/SB0148.html" target="_blank">S.B 148.</a></h2>
       <p>Utah’s Invisible Conditions Alert Program is a voluntary program that allows a person with a qualifying physical or mental condition to have a decal placed on a driver's license or ID card. Utah's Invisible Condition Alert Program is designed to promptly notify first responders about a person's invisible condition that may directly impact the person's ability to communicate. Early identification of an invisible condition during interactions allows first responders such as law enforcement, firefighters, or emergency medical personnel to approach situations with heightened awareness and respond appropriately.</p>
       <ul>
         <li>Communication impediment</li>
@@ -156,10 +156,10 @@
     </div>
   </section>
 
-  <section class="crisis-support-container">
+  <section class="crisis-support-container" aria-labelledby="crisis-support-heading">
     <div>
       <div>
-        <h2>Crisis Support</h2>
+        <h2 id="crisis-support-heading">Crisis Support</h2>
       </div>
       <div class="support-info">
         <p>Praxis Counseling does not provide crisis support and is not a crisis response resource.  At any time, if you are experiencing a mental health crisis, please reach out to national and local crisis response teams:</p>
@@ -185,11 +185,11 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <footer id="contact" role="contentinfo">
     <h3 class="name">Adriane Andersen, <small>CMHC</small></h3>
     <h4>praxiscounselingutah@gmail.com | (385) 346 0534</h4>
     <p>Virtual therapy based in Salt Lake City, Utah <i class="fa-solid fa-mountain-sun"></i></p>
-  </section>
+  </footer>
 
   <script src="script.js"></script>
 </body>
